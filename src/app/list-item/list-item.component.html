@@ -1,18 +1,18 @@
 <div class='list-item'>
   <div class='item-title'>
     <a href='#'>
-      <h2>GO Ms Chief</h2>
+      <h2>{{ ship?.name }}</h2>
       <img class='btn-icon' src='assets/forward-icon.svg' alt='forward'>
     </a>
   </div>
   <div class='item-links-block'>
     <div class='item-links'>
       <span>Тип</span>
-      <span class='link'>High Speed Craft</span>
+      <span class='link'>{{ ship?.type }}</span>
     </div>
     <div class='item-links'>
       <span>Порт</span>
-      <span class='link'>Port Canaveral</span>
+      <span class='link'>{{ ship?.home_port }}</span>
     </div>
   </div>
   <div class='line'></div>
