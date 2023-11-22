@@ -1,0 +1,11 @@
+<div class='input-container'>
+  <div class='box' [@placeholder]='state'>
+    Название
+  </div>
+  <input
+    type='text'
+    class='input'
+    (input)="onInputChange()"
+    [(ngModel)]='inputValue'
+  />
+</div>

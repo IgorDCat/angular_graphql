@@ -1,0 +1,68 @@
+.filters {
+  width: 393px;
+  padding: 52px 33px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 35px;
+}
+
+.filters-input {
+  margin-bottom: 33px;
+}
+
+.placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.typing {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 6px;
+}
+
+.group1 {
+  border: 1px gray solid;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 2px 4px 2px darkgray;
+  border-top: 1px #2962FF solid;
+  margin-bottom: 24px;
+}
+
+.check-group {
+  display: flex;
+  align-items: center;
+}
+
+.check {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.radio {
+  margin-right: 26px;
+  width: 20px;
+  height: 20px;
+}
+
+.type {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 21px;
+}
+
+.radio-group {
+  margin-bottom: 14px;
+}
