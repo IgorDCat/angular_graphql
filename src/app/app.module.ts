@@ -8,7 +8,7 @@ import { ListItemComponent } from './list-item/list-item.component';
 import { FiltersComponent } from './filters/filters.component';
 import { InputComponent } from './input/input.component';
 import { PaginationComponent } from './pagination/pagination.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -28,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     BrowserAnimationsModule,
     GraphQLModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

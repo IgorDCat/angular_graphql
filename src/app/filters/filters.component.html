@@ -6,35 +6,78 @@
     <app-input ></app-input>
   </div>
   <div class='placeholder'>Порт</div>
-  <div class='typing'>Выбраны: 2</div>
-  <div class='group1'>
+  <div class='typing'>Выбраны: {{ numberOfSelected }}</div>
+  <form class='group1' [formGroup]='form'>
     <label class='check-group'>
-      <input type='checkbox' class='check'>
+      <input
+        type='checkbox'
+        class='check'
+        formControlName='Port of Los Angeles'
+        (click)='setCheckOptions()'
+      >
+      <span>Port of Los Angeles</span>
+    </label>
+    <label class='check-group'>
+      <input
+        type='checkbox'
+        class='check'
+        formControlName='Port Canaveral'
+        (click)='setCheckOptions()'
+      >
       <span>Port Canaveral</span>
     </label>
     <label class='check-group'>
-      <input type='checkbox' class='check'>
-      <span>Port Canaveral</span>
+      <input
+        type='checkbox'
+        class='check'
+        formControlName='Fort Lauderdale'
+        (click)='setCheckOptions()'
+      >
+      <span>Fort Lauderdale</span>
     </label>
-    <label class='check-group'>
-      <input type='checkbox' class='check'>
-      <span>Port Canaveral</span>
-    </label>
-  </div>
+  </form>
   <div>
     <div class='type'>Тип</div>
   </div>
   <div>
     <label class='check-group radio-group'>
-      <input type='radio' class='radio' [(ngModel)]='radioOptions' value='Barge'>
+      <input
+        type='radio'
+        class='radio'
+        [(ngModel)]='radioOptions'
+        value='Tug'
+        (click)='onRadioChange()'
+      >
+      <span>Tug</span>
+    </label>
+    <label class='check-group radio-group'>
+      <input
+        type='radio'
+        class='radio'
+        [(ngModel)]='radioOptions'
+        value='Barge'
+        (click)='onRadioChange()'
+      >
       <span>Barge</span>
     </label>
     <label class='check-group radio-group'>
-      <input type='radio' class='radio' [(ngModel)]='radioOptions' value='Cargo'>
+      <input
+        type='radio'
+        class='radio'
+        [(ngModel)]='radioOptions'
+        value='Cargo'
+        (click)='onRadioChange()'
+      >
       <span>Cargo</span>
     </label>
     <label class='check-group radio-group'>
-      <input type='radio' class='radio' [(ngModel)]='radioOptions' value='High Speed Craft'>
+      <input
+        type='radio'
+        class='radio'
+        [(ngModel)]='radioOptions'
+        value='High Speed Craft'
+        (click)='onRadioChange()'
+      >
       <span>High Speed Craft</span>
     </label>
   </div>
