@@ -40,8 +40,7 @@ export class FiltersComponent implements OnInit {
 
   onRadioChange() {
     setTimeout(() => {
-      console.log(this.radioOptions)
       this.filtersService.radioOptions.emit(this.radioOptions)
-    })
+    }, 0)
   }
 }

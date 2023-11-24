@@ -1,7 +1,5 @@
-export class FilterCheckbox {
-  constructor(
-  public PortOfLosAngeles: boolean,
-  public PortCanaveral: boolean,
-  public FortLauderdale: boolean,
-  ) { }
+export interface FilterCheckbox {
+  [PortOfLosAngeles: string]: boolean
+  PortCanaveral: boolean
+  FortLauderdale: boolean
 }
